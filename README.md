@@ -49,9 +49,9 @@ baixarem no começo.
 Copiar o código que estiver dentro do body
 
 
-Inserir na <form>
+Inserir na  ``<form>``
 
-#userform="ngForm" (ngSubmit)="receberDados()"
+``#userform="ngForm" (ngSubmit)="receberDados()"``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/9305a6eb-2e1a-4e92-aab1-3452fd8cede4)
 
@@ -67,12 +67,16 @@ que o app.module será a mesa que estaremos modulando todas as informações, en
 aqui nós estaremos fazendo a importação desse módulo
 
 Acrescentar nos imports
+
+
+``
 import { FormsModule } from '@angular/forms'
 imports:[
 ...,
 ...,
 FormsModule
 ]
+``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/72aed5ef-82e2-41ff-bec1-5390ac0a0d22)
 
@@ -80,14 +84,22 @@ O Angular ele trabalha com rotas, com caminhos que nós estaremos utilizando par
 alterarmos o conteúdo do site, já que teremos os componentes header e footer padrões
 e se altera somente o conteúdo. Para isso funcionar nós precisamos criar essas rotas
 aqui no app-routing
+
+
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/daef2774-67cd-4d89-af58-2d770fc0a3f4)
+
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/72782ec0-2ea6-4c0a-b3ec-101ba366c35e)
 
 Nós indicamos a rota aqui dentro desses colchetes
-const routes: Routes = [
+
+
+
+``const routes: Routes = [
 { path: "", component:LoginComponent }
 ]
+``
+
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/60d03515-0fa4-4436-90a2-0254b6630225)
 
@@ -96,17 +108,19 @@ Agora nós vamos criar o model, ele vai servir para nós fazermos o armazenament
 desses dados e vai funcionar para conseguirmos trabalhar com classes e objetos.
 Então vamos lá
 
-Rodar comando no terminal
-ng generate class models/User
+Rodar comando no terminal ``
+ng generate class models/User``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/ee8feee3-ea39-43c8-9816-d537f11f8542)
 
 
 Então agora precisamos contruir nosso método construtor
-constructor(
+
+
+``constructor(
 public email: string,
 public senha: string
-) {}
+) {}``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/3f81d634-07db-4019-a86e-8faba3d55efc)
 
@@ -118,8 +132,8 @@ classe User que acabamos de criar!
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/bda44731-a1da-4b79-8795-5daea49f420e)
 
 
-Inserir após o ngOnInit()
-userModel = new User("","")
+Inserir após o`` ngOnInit()
+userModel = new User("","")``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/55619bce-a75f-4969-ab6c-016a84302780)
 
@@ -133,11 +147,16 @@ lugar.
 Então vamos fazer o seguinte
 Adicionar nos inputs do form
 
-<... name="email" [(ngModel)]="user.Model.email">
 
+``
+<... name="email" [(ngModel)]="user.Model.email">
+``
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/561eac86-34b1-49d8-b595-11b1634b7d45)
 
+
+``
 <... name="senha" [(ngModel)]="user.Model.senha">
+``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/21452f73-e126-4c1d-a687-d2387111cdef)
 
@@ -147,9 +166,11 @@ estava no input,
 então aqui nós iremos colocar isso
 
 
-receberDados() {
+
+``receberDados() {
 console.log(this.userModel)
 }
+``
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/27ca56f9-92dc-4ccf-8c57-80028983ef5d)
 
