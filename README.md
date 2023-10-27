@@ -14,32 +14,28 @@ Após baixar o projeto base você precisa seguir as seguintes etapas:
  ``ng new``
 
  Ele vai fazer 3 perguntas, responda da seguinte forma:
- Nome do projeto → Login
- Roteamento do Angular → y (Yes)
- Estilização → CSS
+ - Nome do projeto → Login
+ - Roteamento do Angular → y (Yes)
+ - Estilização → CSS
 
 (caso n rode o ng new de alguém pesquisar o comando set execution policy)
-
-Agora vamos abrir a pasta onde está instalado o nosso projeto Angular
-Fechar o VS Code e abrir ele na pasta do projeto
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/8f3f257c-bddd-4212-89e5-3601b7674277)
 
 Observação: deve rodar no powershell como administrador
+
+Agora vamos abrir a pasta onde está instalado o nosso projeto Angular
+Fechar o VS Code e abrir ele na pasta do projeto
 
 Então agora vamos gerar o nosso componente Login
 ng generate component views/login
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/de521cd2-2ac7-499b-b18c-cbd442ec4670)
 
-Vamos lá, aqui o Angular já gerou pra gente xyz arquivos e nesse html aqui é onde nós
-iremos colocar o código da nossa tela de login que está no projeto que pedi para vocês
-baixarem no começo.
+Vamos lá, aqui o Angular já gerou pra gente os arquivos e nesse html aqui é onde nós iremos colocar o código da nossa tela de login que está no projeto que pedi para vocês baixarem no começo.
 Copiar o código que estiver dentro do body
 
-
-Inserir na  
-```<form>```
+Inserir na  ``<form>``
 ```
 #userform="ngForm" (ngSubmit)="receberDados()"
 ```
