@@ -1,28 +1,27 @@
-Você pode usar os arquivos do projeto desenvolvido na atividade da SP1, o qual subiu no GitHub. Para isso, abra seu diretório no GitHub, clique em Code (A) e, depois, em HTTPS (B), conforme indicado abaixo.
-Utilize o botão de copiar (C) para guardar o endereço.
+Para esse plantão vocês precisarão usar um projeto como base, o link está abaixo:
 
-![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/9d71005f-4dae-452c-9ca2-dc3f0353f870)
+``https://github.com/CTM-SENAI-134/ME_PC_Consumo/tree/main``
 
+Após baixar o projeto base você precisa seguir as seguintes etapas:
+- Criar pasta para o projeto
+- Abrir pasta com code
+- Vamos instalar o Angular
 
-![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/831312e0-7c7b-4809-8a06-01d785b0901f)
+``npm install -g @angular/cli``
 
-Em seu computador, crie uma pasta chamada loja-angular.
-Na barra de endereços do Windows Explorer, digite cmd para
-abrir o Terminal.
+- Criar um novo projeto Angular
 
-Observação: você tambem pode abrir pelo terminal do Vscode.
-![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/94176477-8dc8-4b7d-bebd-5740b88a04b2)
+ ``ng new``
 
-Observação: Caso não apareça assim para você é que você não configurou e tem o link abaixo para configura caso você não queira instalar novamente
-
-https://dev.to/leticiacamposs2/como-adicionar-um-menu-de-contexto-abrir-com-vs-code-ao-windows-explorer-300j
- 
-![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/3ec6ff02-cc48-4554-b70f-7d7d61bc0927)
+ Ele vai fazer 3 perguntas, responda da seguinte forma:
+ Nome do projeto → Login
+ Roteamento do Angular → y (Yes)
+ Estilização → CSS
 
 (caso n rode o ng new de alguém pesquisar o comando set execution policy)
+
 Agora vamos abrir a pasta onde está instalado o nosso projeto Angular
 Fechar o VS Code e abrir ele na pasta do projeto
-
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/8f3f257c-bddd-4212-89e5-3601b7674277)
 
