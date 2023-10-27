@@ -1,8 +1,4 @@
-
-Você pode usar os arquivos do projeto desenvolvido
-na atividade da SP1, o qual subiu no GitHub. Para
-isso, abra seu diretório no GitHub, clique em Code (A)
-e, depois, em HTTPS (B), conforme indicado abaixo.
+Você pode usar os arquivos do projeto desenvolvido na atividade da SP1, o qual subiu no GitHub. Para isso, abra seu diretório no GitHub, clique em Code (A) e, depois, em HTTPS (B), conforme indicado abaixo.
 Utilize o botão de copiar (C) para guardar o endereço.
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/9d71005f-4dae-452c-9ca2-dc3f0353f870)
@@ -20,8 +16,6 @@ Observação: você tambem pode abrir pelo terminal do Vscode.
 Observação: Caso não apareça assim para você é que você não configurou e tem o link abaixo para configura caso você não queira instalar novamente
 
 https://dev.to/leticiacamposs2/como-adicionar-um-menu-de-contexto-abrir-com-vs-code-ao-windows-explorer-300j
-
-
  
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/3ec6ff02-cc48-4554-b70f-7d7d61bc0927)
 
@@ -31,10 +25,6 @@ Fechar o VS Code e abrir ele na pasta do projeto
 
 
 ![image](https://github.com/CTM-SENAI-134/Pc-Frameworks/assets/144062335/8f3f257c-bddd-4212-89e5-3601b7674277)
-
-
-
-
 
 Observação: deve rodar no powershell como administrador
 
@@ -198,7 +188,8 @@ npm install -g json-server json-server-auth
 
 Depois de instalar, iremos criar o arquivo db.json que vai representar nosso banco de dados 
 
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d437abc-0f1a-42ab-81bd-882a5132a501/9b057152-a91d-4393-b692-1678990a7d87/Untitled.png)
+![image](https://github.com/CTM-SENAI-134/PI_UC10_FrameworkConsumoAPI/assets/144062335/fb95a214-d6de-4f95-b261-ef3fb42366e0)
+
 
 Então criamos uma lista vazia dentro do arquivo db.json
 
@@ -218,15 +209,16 @@ Para executar e falar para o json-server enxergar o nosso db.json e rodar nossa 
 
 ```json-server db.json -m ./node_modules/json-server-auth```
 
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d437abc-0f1a-42ab-81bd-882a5132a501/f24886ec-6a07-405b-a176-215d0d74a08e/Untitled.png)
+![image](https://github.com/CTM-SENAI-134/PI_UC10_FrameworkConsumoAPI/assets/144062335/16d27779-1349-4aa7-a92d-5618a6ccb36e)
+
 
 Agora vamos cadastrar um usuário trocando o método HTTP para POST e colocando o link do nossos servidor json que está rodando
 
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d437abc-0f1a-42ab-81bd-882a5132a501/c0f1b508-790a-4d41-bbc4-ca7087ffc2b4/Untitled.png)
+![image](https://github.com/CTM-SENAI-134/PI_UC10_FrameworkConsumoAPI/assets/144062335/b3ec508e-830d-4540-84c1-f63395128530)
 
 Vai retornar pra gente um accessToken que está no formato token JWT, vamos copiar esse token
 
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d437abc-0f1a-42ab-81bd-882a5132a501/3848370e-29c3-41ad-afb0-90cecf4795b2/Untitled.png)
+![image](https://github.com/CTM-SENAI-134/PI_UC10_FrameworkConsumoAPI/assets/144062335/048b6980-ef25-47f2-9a89-29597bdbf670)
 
 Agora a gente já consegue fazer o login né, então vamos fazer a importação do nosso **HTTPClientModule** no nosso **app.module** (*assim como o FormsModule*)
 
@@ -254,7 +246,7 @@ export class LoginService {
 
 Agora nós vamos declarar aqui no nosso login.component.ts que ele tem uma dependência do nosso login.service que nem a gente fez no constructor lá do login.service
 
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d437abc-0f1a-42ab-81bd-882a5132a501/f997641f-1aa2-4957-be95-f061ce940aac/Untitled.png)
+![image](https://github.com/CTM-SENAI-134/PI_UC10_FrameworkConsumoAPI/assets/144062335/1a0c4521-41e1-44be-aef4-125d82a4a38d)
 
 Bom, agora como o sistema já sabe **quem é o service**, a gente só precisa chamar a função agora.
 
